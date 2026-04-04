@@ -1,3 +1,9 @@
 pandas
 pyarrow
 pandavro
+duckdb>=0.9.0
+polars>=0.20.0
+matplotlib
+seaborn
+jupyter
+numpy
