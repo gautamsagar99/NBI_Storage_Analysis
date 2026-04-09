@@ -17,44 +17,23 @@
 ### ADeepDiveinto CommonOpenFormatsfor Analytical DBMSs
 - [ADeepDiveinto CommonOpenFormatsfor Analytical DBMSs](./references/A%20Deep%20Dive%20into%20Common%20Open%20Formats%20for%20Analytical%20DBMSs.pdf)
 
-### Compression Algorithms for Efficient Big Data Storage 
-- [International Journal of Trend in Scientific Research and Development (IJTSRD)  
+### Compression Algorithms for Efficient Big Data Storage
+- [International Journal of Trend in Scientific Research and Development (IJTSRD)
 Volume 9 Issue 3, May-Jun 2025 Available Online: www.ijtsrd.com e-ISSN: 2456 – 6470](./references/Compression%20Algorithms%20for%20Efficient%20Big%20Data%20Storage.pdf)
 
 ### Spatial Parquet: A Column File Format for Geospatial Data Lakes [Extended Version]
 - [arXiv:2209.02158v1  [cs.DB]  5 Sep 2022](./references/Spatial%20Parquet%20-%20A%20Column%20File%20Format%20for%20Geospatial%20Data.pdf)
 
 
-## Reference Blogs
+### Query: Columnar Database & Storage Research
 
-### Performance & cost: Parquet vs Avro vs ORC
-- [“Performance and Cost Implications: Parquet, Avro, ORC.” DZone article with benchmarks and cost models.](https://dzone.com/articles/performance-and-cost-implications-parquet-avro-orc)
+### DuckDB: An Embeddable Analytical Database
+- [“DuckDB: An Embeddable Analytical Database.” ACM SIGMOD Record.](https://dl.acm.org/doi/epdf/10.1145/3299869.3320212)
+- Foundational paper on DuckDB's architecture and design principles.
 
-### Benchmark of different file formats
-- [“Comparison of Different File Formats in Big Data.” Adaltas benchmark (CSV, Parquet, ORC, others).](https://www.adaltas.com/en/2020/07/23/benchmark-study-of-different-file-format/)
 
-### Big Data file formats overview
-- [“Big Data File Formats, Explained – Parquet vs ORC vs AVRO vs JSON.” Towards Data Science.](https://towardsdatascience.com/big-data-file-formats-explained-275876dc1fc9/)
+### Efficient Query Processing on Parquet
+- [Binnig et al., “Efficient Query Processing with Parquet.” PhD Symposium Paper, CIDR 2022.](https://ceur-ws.org/Vol-3651/PhDW-3.pdf)
+- Direct Parquet query processing, pruning techniques, and performance methods.
 
-### Choosing file formats for big data
-- [“A Comparison of Parquet, JSON, ORC, Avro, and CSV: Choosing the Right File Format for Big Data.”](https://ghostinthedata.info/posts/2023/2023-02-12-choosing-the-right-file-format-for-big-data/)
 
-### Evaluation framework for Avro, Parquet, ORC
-- [Nexla whitepaper: “Understanding Avro, Parquet & ORC — An Evaluation Framework.”](https://nexla.com/new-whitepaper-understanding-avro-parquet-orc/)
-
-## Parquet/ORC/Avro vs CSV and Data Lakes
-
-### Parquet vs CSV for analytics
-- [“Parquet vs CSV: Which Format Should You Choose?” Last9 – includes TPC‑H style benchmarks and size/performance comparisons.](https://last9.io/blog/parquet-vs-csv/)
-
-### What is Parquet?
-- [Databricks / MotherDuck style explainer on Parquet vs CSV/Avro/ORC and why it’s standard in data lakes.](https://motherduck.com/learn-more/why-choose-parquet-table-file-format/)
-
-### Data lake file formats overview
-- [“Data Lake File Formats.” Blog explaining Parquet, ORC, Avro roles and when to pick each.](https://www.ssp.sh/brain/data-lake-file-formats/)
-
-### Optimizing storage formats in data lakes
-- [“Optimizing Storage Formats in Data Lakes: Parquet vs. ORC vs. Avro.” HashStudioz.](https://www.hashstudioz.com/blog/optimizing-storage-formats-in-data-lakes-parquet-vs-orc-vs-avro/)
-
-### Understanding ORC, Parquet, and Avro in Azure Data Lake
-- [Blog showing file size comparisons and guidance on choosing formats in ADLS.](https://www.certlibrary.com/blog/understanding-orc-parquet-and-avro-file-formats-in-azure-data-lake/)
