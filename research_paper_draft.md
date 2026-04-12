@@ -17,6 +17,7 @@ Data Conversion: Raw NBI data was converted using Python 3.8+ scripts into compr
 Validation: Automated scripts were used to ensure the integrity of the converted outputs across all formats.
 
  ![Tool Comparison](./images/storage_format_analysis.png)
+
 Fig 1: Storage Tool Comparison with csv
 
 Benchmarking: Four tools were tested against the Parquet dataset:
@@ -40,9 +41,11 @@ The benchmarking results revealed a clear distinction in performance based on qu
 
 
   ![Simple Query Results](./images/simple_query_analysis.png)
+
 Fig 2 : Simple Query Results
 
   ![Complex Query Results](./images/complex_query_analysis.png)
+
 Fig 3: Complex Query Results
 
 ## Discussion
