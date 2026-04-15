@@ -3,7 +3,7 @@
 
 ## Abstract
 
-The National Bridge Inventory (NBI) Data Format Analysis Project evaluates the efficiency of various data storage formats and query tools for managing large-scale infrastructure data. The project utilizes a dataset comprising 21.6 million total rows across 1,728 files, totaling approximately 1.4 GB. To determine the most efficient method for handling this data, the project converts the NBI dataset into multiple compressed formats: CSV with GZIP, ORC with Snappy, and Parquet with both Snappy and Zstandard. This paper investigates storage efficiency, compression ratios, and the query performance of four major Python-based tools—DuckDB, Pandas, Polars, and PyArrow—to identify the optimal workflow for large-scale bridge data analysis.
+The National Bridge Inventory (NBI) Data Format Analysis Project evaluates the efficiency of various data storage formats and query tools for managing large-scale infrastructure data. The project utilizes a dataset comprising 21.6 million total rows across 1,728 files, totaling approximately 10 GB. To determine the most efficient method for handling this data, the project converts the NBI dataset into multiple compressed formats: CSV with GZIP, ORC with Snappy, and Parquet with both Snappy and Zstandard. This paper investigates storage efficiency, compression ratios, and the query performance of four major Python-based tools—DuckDB, Pandas, Polars, and PyArrow—to identify the optimal workflow for large-scale bridge data analysis.
 
 ## Introduction
 Efficient data storage and retrieval are critical for managing the vast datasets associated with national infrastructure. While traditional formats like CSV are widely used, they often lack the performance required for complex analytical tasks. This study seeks to identify the "best" format by comparing traditional row-based storage with modern columnar formats like Parquet and ORC. Initial findings suggest that while there is no single "best" format for every scenario, Parquet combined with specialized query engines offers the most robust performance for complex multi-column aggregations.
@@ -57,3 +57,24 @@ Data Quality Constraints: It is important to note that these results were obtain
 
 ## Conclusion
 This project demonstrates that for large-scale infrastructure datasets like the NBI, DuckDB paired with Parquet storage provides the most efficient performance for complex analytical queries. However, for lightweight tasks, the simplicity of Pandas remains effective. Future work will focus on implementing and benchmarking the AVRO format, which is currently in development (WIP), and testing these tools on fully cleaned datasets to further refine performance recommendations
+
+## References
+
+
+1. A Comparative Analysis of AVRO, Parquet, and ORC Formats in Big Data Environments.” JETA, Vol. 4, Issue 3.
+
+2. Mastering Big Data Formats: ORC, Parquet, Avro, Iceberg, and the Modern Data Lake.” IJCTT, 2025.
+
+3. Zeng et al., “An Empirical Evaluation of Columnar Storage Formats.” PVLDB, Vol. 17.
+
+4. Miguel Zenon Nicanor L. Saavedra and William Emmanuel S. Yu, "Journal of Advances in Computer Networks, Vol. 5, No. 2, December 2017"
+
+5. ADeepDiveinto CommonOpenFormatsfor Analytical DBMSs
+
+6. International Journal of Trend in Scientific Research and Development (IJTSRD) Volume 9 Issue 3
+
+7.  Spatial Parquet: A Column File Format for Geospatial Data Lakes 
+
+8. “DuckDB: An Embeddable Analytical Database.” ACM SIGMOD Record.
+
+9. Binnig et al., “Efficient Query Processing with Parquet.” PhD Symposium Paper, CIDR 2022.
